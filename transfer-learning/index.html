@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Transfer learning with TensorFlow.js</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h2>Transfer learning</h2>
+
+    <div id="controller" style="display: none">
+      <div>
+        <div class="main-section">
+          <video
+            autoplay
+            playsinline
+            muted
+            id="webcam"
+            width="224"
+            height="224"
+          ></video>
+          <div id="prediction"></div>
+        </div>
+      </div>
+
+      <div class="buttons-container">
+        <div id="add-samples-container">
+          <div class="left-container">
+            <button class="record-button" id="left">Add left sample</button>
+            <p><span id="left-total">0</span> samples</p>
+          </div>
+          <div class="right-container">
+            <button class="record-button" id="right">Add right sample</button>
+            <p><span id="right-total">0</span> samples</p>
+          </div>
+        </div>
+        <button id="train">
+          <span id="train-status">train model</span>
+        </button>
+        <section class="predict-section">
+          <button id="predict" class="primary" disabled>start predictions</button>
+          <button id="stop" class="danger" disabled>stop</button>
+        </section>
+      </div>
+    </div>
+    <div id="status">Loading model...</div>
+
+    <script type="module" src="index.js"></script>
+  </body>
+</html>

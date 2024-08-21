@@ -1,0 +1,13 @@
+node_modules/
+.DS_Store
+.next/
+.vercel
+package-lock.json
+yarn.lock
+.git
+**/node_modules
+**/dist
+**/.parcel-cache
+**/.package-lock.json
+
+

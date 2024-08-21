@@ -1,0 +1,76 @@
+body {
+  font-family: monospace;
+  color: #6F92BF;
+  background-color: #282C40;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button {
+  padding: 12px;
+  background-color: #3C4973;
+  color: #fff;
+  border-radius: 4px;
+  border: none;
+  font-size: 14px;
+}
+button:hover {
+  background-color: #2e395c;
+}
+
+button.danger {
+  background-color: #8e1f2b;
+}
+button.danger:hover {
+  background-color: #721922;
+}
+
+button.primary {
+  background-color: #4946A6;
+}
+button.primary:hover {
+  background-color: #3d3a8d;
+}
+
+button[disabled], button[disabled]:hover {
+  background-color: #78909C;
+  color: #B0BEC5
+}
+
+#webcam {
+  border: 1px solid white;
+  transform: rotateY(180deg);
+  -webkit-transform:rotateY(180deg); /* Safari and Chrome */
+  -moz-transform:rotateY(180deg); /* Firefox */
+}
+
+#label-container {
+  font-size: 32px;
+  width: 200px;
+  text-align: center;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+#item-container {
+  width: 100%;
+  position: relative;
+}
+
+#item {
+  font-size: 32px;
+  position: absolute;
+}
+
+.main-section {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#prediction {
+  font-size: 46px;
+}
